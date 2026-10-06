@@ -1,0 +1,29 @@
+{
+  "name": "bytemingos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CS3301 CIE2 campus food ordering mini project",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend run start",
+    "test": "npm --prefix backend run test"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "lucide-react": "^0.468.0",
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.7",
+    "@vitejs/plugin-react": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}
